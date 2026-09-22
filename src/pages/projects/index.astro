@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Card from '../../components/UI/Card.astro';
+---
+
+<BaseLayout title="Projects - Nicholas Economou" description="Portfolio projects of Nicholas Economou.">
+  <div class="py-16 max-w-5xl mx-auto">
+    <header class="mb-16 border-b border-sage pb-12">
+      <h1 class="text-4xl font-bold text-slate-900 mb-6">Research & Design Cases</h1>
+      <p class="text-xl text-slate-800 font-medium leading-relaxed">
+        Below showcases my project for my Master’s Thesis Project as well as for a studio design that won awards. These showcase an understanding of product design and human-computer interaction.
+      </p>
+    </header>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <Card 
+        title="Mental Sketching Models"
+        description="An AI-augmented digital canvas exploring distributed cognition, externalized mental models, and real-time generative sketch support."
+        href="/projects/masters-thesis"
+        image="/src/assets/images/thesis/deliverables/Slide 16_9 - 1.png"
+        tags={['UX Research', 'AI Product Design', 'Cognitive Psychology']}
+      />
+      
+      <Card 
+        title="Smart Fitness Mirror"
+        description="Award-winning interactive smart mirror designed to support and encourage healthy habit tracking through intuitive visual feedback."
+        href="/projects/smart-fitness-mirror"
+        image="/src/assets/images/older-studio/Smart Mirror Project/Fairest 5.png"
+        tags={['European Product Design Award', 'FIT Award 2023', 'Interaction Design']}
+      />
+    </div>
+  </div>
+</BaseLayout>

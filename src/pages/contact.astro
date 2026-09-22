@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/UI/Button.astro';
+---
+
+<BaseLayout title="Contact - Niko Eco" description="Get in touch with Niko.">
+  <div class="max-w-2xl mx-auto py-16">
+    <div class="text-center mb-12 border-b border-sage pb-12">
+      <h1 class="text-4xl font-bold text-slate-900 mb-4">Get in Touch</h1>
+      <p class="text-xl text-slate-800 font-medium">
+        Interested in collaborating or have a question about my work? I'd love to hear from you.
+      </p>
+    </div>
+    
+    <div class="bg-sage-light shadow-sm border border-sage rounded-xl p-8">
+      <form class="space-y-6" onsubmit="event.preventDefault(); alert('Form submission logic will go here!');">
+        <div>
+          <label for="name" class="block text-sm font-bold text-slate-900">Name</label>
+          <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-sage shadow-sm focus:border-sage-dark focus:ring-sage-dark sm:text-sm px-4 py-2 border bg-white text-slate-900" required>
+        </div>
+        
+        <div>
+          <label for="email" class="block text-sm font-bold text-slate-900">Email</label>
+          <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-sage shadow-sm focus:border-sage-dark focus:ring-sage-dark sm:text-sm px-4 py-2 border bg-white text-slate-900" required>
+        </div>
+        
+        <div>
+          <label for="message" class="block text-sm font-bold text-slate-900">Message</label>
+          <textarea id="message" name="message" rows="5" class="mt-1 block w-full rounded-md border-sage shadow-sm focus:border-sage-dark focus:ring-sage-dark sm:text-sm px-4 py-2 border bg-white text-slate-900" required></textarea>
+        </div>
+        
+        <Button href="#" class="w-full text-lg py-3">Send Message</Button>
+      </form>
+    </div>
+  </div>
+</BaseLayout>

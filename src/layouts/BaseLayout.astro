@@ -1,0 +1,65 @@
+---
+import '../styles/global.css';
+import Header from '../components/Navigation/Header.astro';
+import Footer from '../components/Navigation/Footer.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Nicholas Economou - HCI Researcher & AI-Learning Experience Designer" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <title>{title}</title>
+    <style is:global>
+      :root {
+        --font-sans: 'Inter', sans-serif;
+        --font-mono: 'JetBrains Mono', monospace;
+        --bg-app: linear-gradient(135deg, #F5EEDC 0%, #E8EED2 100%);
+        --bg-brand: linear-gradient(135deg, #D7D0A2 0%, #CBD8A3 100%);
+        --sage-light: #E8EED2;
+        --sage-green: #5C6B4E;
+        --sage-dark: #3F4D33;
+      }
+      body {
+        font-family: var(--font-sans);
+        background: var(--bg-app);
+        background-attachment: fixed;
+      }
+      .font-mono {
+        font-family: var(--font-mono);
+      }
+      .brand-gradient {
+        background: var(--bg-brand);
+      }
+      .text-sage-dark {
+        color: var(--sage-dark);
+      }
+      .border-sage {
+        border-color: var(--sage-green);
+      }
+      .bg-sage-light {
+        background-color: var(--sage-light);
+      }
+    </style>
+  </head>
+  <body class="text-slate-900 min-h-screen flex flex-col antialiased selection:bg-[#D7D0A2] selection:text-slate-900">
+    <Header />
+    <main class="flex-grow w-full max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 py-12">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

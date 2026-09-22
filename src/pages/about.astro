@@ -1,0 +1,107 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="About - Nicholas Economou" description="About Nicholas Economou, HCI Researcher and AI-Learning Experience Designer.">
+  <div class="max-w-4xl mx-auto py-16">
+    <header class="mb-16 border-b border-sage pb-12">
+      <h1 class="text-4xl font-bold text-slate-900 mb-6">About Nicholas</h1>
+      <p class="text-xl text-slate-800 font-medium leading-relaxed">
+        I am an HCI Researcher and AI-Learning Experience Designer with a deep interdisciplinary foundation spanning Cognitive Science, Computer Science, and Industrial Design. My focus is on translating academic research and technical constraints into actionable, human-centered learning systems.
+      </p>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+      {/* Experience & Education */}
+      <div class="md:col-span-8 space-y-16">
+        
+        <section>
+          <h2 class="text-xs font-mono text-sage-dark font-bold uppercase tracking-widest mb-8">Education</h2>
+          
+          <div class="mb-8">
+            <h3 class="text-lg font-bold text-slate-900">Georgia Institute of Technology</h3>
+            <p class="text-slate-800 font-medium mb-2">Master's of Industrial Design (HCI Focus) • May 2026</p>
+            <p class="text-sm text-slate-700 font-medium leading-relaxed">
+              <strong>Thesis:</strong> Developed an AI-powered sketching application using a scaffolded approach to support users in learning sketching techniques and developing their creative skills, combining new technologies with traditional practices.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">Georgia State University</h3>
+            <p class="text-slate-800 font-medium">Bachelor of Science, Computer Science (Minor: Psychology) • May 2021</p>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="text-xs font-mono text-sage-dark font-bold uppercase tracking-widest mb-8">Experience</h2>
+          
+          <div class="mb-10 relative pl-6 border-l border-sage">
+            <div class="absolute w-2 h-2 bg-sage-dark rounded-full -left-[5px] top-2"></div>
+            <h3 class="text-lg font-bold text-slate-900">Graduate Teaching Assistant</h3>
+            <p class="text-slate-800 font-medium mb-3 text-sm">Georgia Tech College of Computing • Jan 2023 – May 2025</p>
+            <ul class="list-disc list-outside ml-4 text-sm text-slate-800 font-medium space-y-2">
+              <li>Designed and refined instructional materials to facilitate concept mastery spanning Computer Science, Psychology, and Neuroscience cohorts (Introduction to Cognitive Science).</li>
+              <li>Consistently translated academic research into actionable learning and delivered key learning techniques to 30+ students.</li>
+              <li>Analyzed student performance data to iterate on curriculum design and improve learning outcomes.</li>
+            </ul>
+          </div>
+
+          <div class="mb-10 relative pl-6 border-l border-sage">
+            <div class="absolute w-2 h-2 bg-sage-green rounded-full -left-[5px] top-2"></div>
+            <h3 class="text-lg font-bold text-slate-900">Graduate Student Internship</h3>
+            <p class="text-slate-800 font-medium mb-3 text-sm">Georgia Tech University Housing • May 2023 – Sep 2023</p>
+            <ul class="list-disc list-outside ml-4 text-sm text-slate-800 font-medium space-y-2">
+              <li>Synthesized complex stakeholder needs into actionable design requirements for physical and digital signage, improving navigational experiences.</li>
+              <li>Led a team of 7 undergraduate students and allocated resources across multiple facilities for maximum impact.</li>
+            </ul>
+          </div>
+
+          <div class="relative pl-6 border-l border-sage">
+            <div class="absolute w-2 h-2 bg-sage-green rounded-full -left-[5px] top-2"></div>
+            <h3 class="text-lg font-bold text-slate-900">Product Support Rep 1</h3>
+            <p class="text-slate-800 font-medium mb-3 text-sm">Fidelity Information Services (FIS) • May 2021 – July 2022</p>
+            <ul class="list-disc list-outside ml-4 text-sm text-slate-800 font-medium space-y-2">
+              <li>Communicated critical financial data and trade status updates to high-profile clients, including CME and NASDAQ.</li>
+              <li>Employed data visualizations using Microsoft Power BI to optimize internal reporting workflows.</li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+
+      {/* Sidebar: Skills & Downloads */}
+      <div class="md:col-span-4 space-y-12">
+        
+        <div class="bg-sage-light border border-sage p-6 rounded-xl">
+          <h2 class="text-xs font-mono text-sage-dark font-bold uppercase tracking-widest mb-6">Capabilities</h2>
+          
+          <div class="mb-6">
+            <h3 class="text-sm font-bold text-slate-900 mb-2">Design & Research</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-white border border-sage text-xs text-slate-800 font-medium rounded-md">UX Design</span>
+              <span class="px-2 py-1 bg-white border border-sage text-xs text-slate-800 font-medium rounded-md">Prototyping</span>
+              <span class="px-2 py-1 bg-white border border-sage text-xs text-slate-800 font-medium rounded-md">UX Research</span>
+              <span class="px-2 py-1 bg-white border border-sage text-xs text-slate-800 font-medium rounded-md">Instructional Design</span>
+              <span class="px-2 py-1 bg-white border border-sage text-xs text-slate-800 font-medium rounded-md">Cognitive Psychology</span>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-bold text-slate-900 mb-2">AI & Technical</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-white border border-sage text-xs text-slate-800 font-medium rounded-md">AI Prompt Engineering</span>
+              <span class="px-2 py-1 bg-white border border-sage text-xs text-slate-800 font-medium rounded-md">Python</span>
+              <span class="px-2 py-1 bg-white border border-sage text-xs text-slate-800 font-medium rounded-md">C++</span>
+              <span class="px-2 py-1 bg-white border border-sage text-xs text-slate-800 font-medium rounded-md">Java</span>
+              <span class="px-2 py-1 bg-white border border-sage text-xs text-slate-800 font-medium rounded-md">SQL</span>
+              <span class="px-2 py-1 bg-white border border-sage text-xs text-slate-800 font-medium rounded-md">Data Visualization</span>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,123 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Mental Sketching Models - Case Study" description="Master's Thesis Case Study: AI-augmented digital canvas exploring distributed cognition.">
+  <article class="max-w-5xl mx-auto py-16">
+    {/* Header */}
+    <header class="mb-16 border-b border-sage pb-12 text-center md:text-left">
+      <div class="inline-block px-4 py-1.5 mb-6 text-xs font-mono font-medium tracking-wide text-sage-dark bg-sage-light border border-sage rounded-full">
+        Master's Thesis (Georgia Tech)
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">Mental Sketching Models</h1>
+      <p class="text-xl text-slate-800 mb-8 font-medium leading-relaxed max-w-3xl">
+        An AI-powered sketching application using a scaffolded approach to support users in learning sketching techniques and developing their creative skills, bridging advanced capabilities with traditional practices.
+      </p>
+      <div class="flex flex-wrap gap-2 md:justify-start justify-center">
+        <span class="px-3 py-1 bg-slate-50 border border-slate-200 text-xs text-slate-800 font-medium">UX Research</span>
+        <span class="px-3 py-1 bg-slate-50 border border-slate-200 text-xs text-slate-800 font-medium">AI Product Design</span>
+        <span class="px-3 py-1 bg-slate-50 border border-slate-200 text-xs text-slate-800 font-medium">Cognitive Psychology</span>
+      </div>
+    </header>
+
+    {/* Hero Showcase - Updated to Workflow Imagery */}
+    <div class="w-full bg-sage-light border border-sage rounded-xl mb-16 overflow-hidden">
+      <img src="/src/assets/images/thesis/deliverables/Slide 16_9 - 2.png" alt="Mental Sketching Models Workflow" class="w-full h-auto object-cover" />
+    </div>
+
+    <div class="prose prose-slate prose-lg max-w-3xl mx-auto">
+      <h2 class="text-2xl font-bold text-slate-900 mt-12 mb-6">1. The Problem Space</h2>
+      <p class="text-slate-800 leading-relaxed mb-6 font-medium">
+        Learning to sketch involves steep cognitive barriers. Novices struggle to translate 3D spatial understanding into 2D representations. While generative AI can produce final images, it often bypasses the <em>process</em> of learning, removing human agency rather than augmenting it. 
+      </p>
+      
+      <figure class="my-10">
+        <img src="/src/assets/images/thesis/Final User Testing Screenshots/IMG_0153.jpg" alt="Application Home Page" class="w-full rounded-lg border border-sage shadow-sm" />
+        <figcaption class="text-sm text-slate-700 text-center mt-3 font-mono font-semibold">Introduction to the Mental Sketching Model Application Home Page.</figcaption>
+      </figure>
+
+      <h2 class="text-2xl font-bold text-slate-900 mt-12 mb-6">2. The Cognitive Framework</h2>
+      <p class="text-slate-800 leading-relaxed mb-6 font-medium">
+        Grounded in <strong>Distributed Cognition</strong> and <strong>Reflective Learning</strong>, this project externalizes mental models to improve human agency. The application doesn't just draw for the user; it provides scaffolded visual references that reinforce the user's own cognitive processes.
+      </p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
+        <div class="bg-sage-light border border-sage p-6 rounded-xl">
+          <h3 class="font-mono text-sm text-sage-dark mb-2 font-bold uppercase">Distributed Cognition</h3>
+          <p class="text-sm text-slate-800 font-medium">Offloading cognitive load to the digital canvas, allowing users to focus on technique rather than blank-page paralysis.</p>
+        </div>
+        <div class="bg-sage-light border border-sage p-6 rounded-xl">
+          <h3 class="font-mono text-sm text-sage-dark mb-2 font-bold uppercase">Reflective Learning</h3>
+          <p class="text-sm text-slate-800 font-medium">Creating a feedback loop where the AI suggests structural forms, prompting the user to reflect on and adjust their own stroke mechanics.</p>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold text-slate-900 mt-12 mb-6">3. AI System Design & UX Prototyping</h2>
+      <p class="text-slate-800 leading-relaxed mb-8 font-medium">
+        This section highlights the progression from a rough conceptual sketch into a functional digital application. I designed and prototyped the application through a formal thesis-based research process, starting with fundamental sketches to map out the cognitive interactions.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
+        <figure class="flex flex-col h-full">
+          <img src="/src/assets/images/thesis/UI/Thesis_Prototype_Sketching.jpg" alt="Early prototype sketching and conceptual ideation" class="w-full h-64 object-cover rounded-lg border border-sage shadow-sm" />
+          <figcaption class="text-sm text-slate-700 text-center mt-3 font-mono font-semibold">Early prototype sketching.</figcaption>
+        </figure>
+        <figure class="flex flex-col h-full">
+          <img src="/src/assets/images/thesis/Final User Testing Screenshots/IMG_0154.jpg" alt="Final Application Outcome" class="w-full h-64 object-cover rounded-lg border border-sage shadow-sm" />
+          <figcaption class="text-sm text-slate-700 text-center mt-3 font-mono font-semibold">Final prototype application.</figcaption>
+        </figure>
+      </div>
+
+      <h2 class="text-2xl font-bold text-slate-900 mt-12 mb-6">4. Proof of Concept</h2>
+      <p class="text-slate-800 leading-relaxed mb-8 font-medium">
+        The application serves as a proof of concept for user control over sketching ideas and receiving iterative feedback. By allowing the user to seamlessly toggle between sketching modes, the system preserves their agency while providing varying levels of AI assistance.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <figure>
+           <img src="/src/assets/images/thesis/modes/1_Application Plain Sketch.png" alt="Application Plain Sketch" class="w-full object-cover rounded-lg border border-sage bg-white shadow-sm" />
+           <figcaption class="text-xs text-slate-700 text-center mt-2 font-mono font-bold">1. Plain Sketch</figcaption>
+        </figure>
+        <figure>
+           <img src="/src/assets/images/thesis/modes/2_Application Sketching Mode.png" alt="Application Sketching Mode" class="w-full object-cover rounded-lg border border-sage bg-white shadow-sm" />
+           <figcaption class="text-xs text-slate-700 text-center mt-2 font-mono font-bold">2. Sketching Mode</figcaption>
+        </figure>
+        <figure>
+           <img src="/src/assets/images/thesis/modes/3_Application shading mode.png" alt="Application Shading Mode" class="w-full object-cover rounded-lg border border-sage bg-white shadow-sm" />
+           <figcaption class="text-xs text-slate-700 text-center mt-2 font-mono font-bold">3. Shading Mode</figcaption>
+        </figure>
+      </div>
+
+    </div>
+
+    {/* Documentation Section (View Only Text) */}
+    <section class="mt-16 pt-12 border-t border-sage max-w-4xl mx-auto">
+      <h2 class="text-lg font-mono text-slate-900 mb-6 uppercase tracking-widest text-center md:text-left font-bold">Academic Documentation</h2>
+      <div class="bg-sage-light border border-sage rounded-xl p-8 shadow-sm">
+        <div class="mb-6">
+          <h3 class="font-bold text-2xl mb-2 text-sage-dark">Review the Thesis Abstract</h3>
+          <p class="text-slate-800 text-sm font-medium">Explore the conceptual foundation of this project below.</p>
+        </div>
+        
+        <details class="group">
+          <summary class="cursor-pointer inline-flex items-center gap-3 bg-slate-900 text-white px-8 py-4 font-bold text-lg rounded-xl hover:bg-slate-800 transition-all shadow-lg ring-4 ring-transparent hover:ring-slate-300">
+            <span>View Abstract</span>
+            <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </summary>
+          <div class="mt-6 bg-white p-8 rounded-xl border-2 border-sage shadow-inner">
+            <h4 class="font-bold text-lg mb-4 text-slate-900">Abstract</h4>
+            <p class="text-slate-800 text-sm leading-relaxed font-medium mb-4">
+              New designers adapt to use new tools and technologies, including artificial intelligence (AI). Use of AI currently requires designers to navigate a variety of platforms, applications or interfaces to produce their desired outcome. In the realm of sketching, AI-empowered tools like [18] have been developed to take drawings/sketches from novice designers and then produce the same work, albeit in higher fidelity with little to no additional effort on the part of the designer. 
+            </p>
+            <p class="text-slate-800 text-sm leading-relaxed font-medium mb-4">
+              While such tools assist designers in sketching directly, they also impact the final design output and can potentially insert hallucinations or misinterpretations into the final outcome of the design process. The final outcome should be more authentic and true to the intentions of the designer’s Mental Model. This project proposes an alternative approach, where designers can intentionally limit how AI-influences the designers’ working file, by creating a generative AI reference layer for designers to model from. 
+            </p>
+            <p class="text-slate-800 text-sm leading-relaxed font-medium">
+              In this Mental Sketching Model approach, the system takes user’s working sketch and textual prompts to generate an exemplar sketch on a separate layer—as a form of visual feedback or reference to support their own design intention and iteration. The aim of this work is to support the development of essential design skills, shifting the focus from using generative AI as a mere output to learning from it through scaffolding practices and improving cognitive design workflows.
+            </p>
+          </div>
+        </details>
+      </div>
+    </section>
+  </article>
+</BaseLayout>
